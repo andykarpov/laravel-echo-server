@@ -185,6 +185,10 @@ export class Cli {
                     return options.corsAllow == true;
                 }
             }, {
+                name: 'redisChannelPrefix',
+                default: '',
+                message: 'Enter the redis database prefix. if laravel 5.8, use `laravel_database_`, else leave it empty.',
+            }, {
                 name: 'file',
                 default: defaultFile,
                 message: 'What do you want this config to be saved as?'
